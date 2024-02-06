@@ -1,9 +1,26 @@
 <!DOCTYPE html lang="eng">
 <head>
-    <meta charset="utf-8">
+    <!--
+        We will add some content to the meta tag and we will define why we did so
+    -->
+    <meta http-equiv="Content-Type" 
+    content="text/html" ;
+    charset="utf-8">
     <title>
         Revision file
     </title>
+    <!--In this we will add some form css-->
+    <style>
+        input[name="number"]{
+            color: red;
+        } ;
+        input[name="email"]{
+            color: #999;
+        } ;
+    </style>
+    <!--
+        The above added color will appear in the email input section
+    -->
 </head>
 <body>
     <h1>
@@ -26,7 +43,7 @@
         <ol style="list-style-type: upper-roman;">
             This list will contain different type of scripts
             <li>
-                Elon Musk &hearts;
+                Elon Musk
             </li>
             <li>
                 Jeff Bezos
@@ -73,6 +90,7 @@
             </li>
             <li>
                 Poland
+                &hearts;
             </li>
         </ul>
         <ul style="list-style:circle inside URL(https://www.google.com/imgres?imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F601%2F285%2Fpng-clipart-red-and-white-check-bullet-google-docs-bullet-points-angle-text.png&tbnid=na-TtEaiAO5JVM&vet=12ahUKEwiG1PaqvImEAxWmrGMGHXQ3AuYQMygEegQIARB-..i&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dbullet%2Bpoints&docid=Fbjfm9PNItU6OM&w=900&h=800&q=bullet%20%20point%20images&ved=2ahUKEwiG1PaqvImEAxWmrGMGHXQ3AuYQMygEegQIARB-);">
@@ -91,6 +109,93 @@
         </h2>
         <a href="www.google.com">Google</a> <br>
         <a href="www.youtube.com">Youtube</a> <br>
-        <a href="#2">List</a>
+        <a href="#2">List</a><br>
+        <a href="#3">Links</a>
     </article>
+    <!--Now we will add some forms and it's properties-->
+    <div id="4">
+        <!--
+            This section will contain the form 
+        -->
+        <form action="get">
+            <label for="email">
+                Email :
+            </label>
+            <input type="email" name="email" value="person@ex.com" size="40">
+        </form>
+        <!--Now we will add the script section-->
+        <script src="jquery.js">
+            //To activate this section we have to copy the "jquery.js " from the internet
+        </script>
+        <script>
+            //In this section we will define our own script in this section we will add and 
+            //Define some functions 
+            $(function(){
+                //This section is based on the value of the attribute 
+                $("input[name='email']").focus(function(){
+                    //The above code line defined the location where the function has to take action 
+                    if($(this).val() == "person@ex.com"){
+                        $(this).val("");
+                        $(this).css("color" , "black");
+                    }
+                    //The code that we defined contains the basic code that we had executed to perform a certain function 
+                });
+            }) 
+        </script>
+    </div>
+    <!--
+        Now we wiil add another form with another type of script 
+        This script is defined for number inout box
+    -->
+    <div id="5">
+        <!--
+            This section contains the code for the number input section
+        -->
+        <form action="post">
+            <label for="number">
+                Number :
+            </label>
+            <input type="number" name="number" id="number" size="10">
+        </form>
+        <!--
+            Now we will add the script for the number input field 
+        -->
+        <script src="jquery.js">
+            //This script contains the query code 
+            //Add the code later 
+        </script>
+        <script>
+            //This section will functipon based on the attribute "number"
+            //All the code established in this section will work  only for defined section
+            
+            //Let's begin
+            $(function(){
+                $("input[name='number']").focus(function(){
+                    if($(this).val() == "9412483764"){
+                        $(this).val("") ;
+                        $(this).css("color" , "red");
+                    };
+                });
+            });
+        </script>
+    </div>
+    <em>
+        This file is important because it contains alot of information.
+    </em> <br>
+    <strong>
+        This file is important
+    </strong>
+    <!--
+        This tag below defines the paragraph tag
+    -->
+    <p>
+        This is a paragraph tag.
+    </p>
+    <br /> <!-- This tag is same as the "<br>-</br>"-->
+    <hr noshade>
+
+    <!--
+        Now we will add the image tag with some specifications
+    -->
+    <img src="images.jpeg" alt="Runners" height="100" width="100">
 </body>
