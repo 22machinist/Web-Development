@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/js">
+    <script>
         //Adding the event listener to show context menu or Right-Click
+        document.addEventListener("contextmenu", function(event){
+            event.preventDefault() ; //Prevent default context menu
+            var contextMenu = document.getElementById("context-menu");
+            contextMenu.style.top = event.clientY + "px" ; 
+            contextMenu.style.left = event.clientX + "px" ;
+            contextMenu.classList.add("show") ;
+        }) ;
+
+        //Hiding the context menu when clicking outside 
+        document.addEventListener("click" , function(event){
+            var contextMenu = document.getElementById("context-menu");
+            contextMenu.classList.remove("show");
+        }) ;
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
