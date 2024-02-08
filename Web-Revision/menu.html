@@ -90,5 +90,28 @@
         // Update the content of the paragraph element with id "currentDateTime" to display the current date and time
         document.getElementById("currentDateTime").textContent = getCurrentDateTime() ;
     </script>
+
+    <!--
+        Let us try to use the access key attribute in the html
+    -->
+    <h2>
+        Access Key Example 
+    </h2>
+    <!-- Example of using accesskey with a button-->
+    <button accesskey="b"> Button with access key: </button>
+
+    <!-- Example of using accesskey with the anchor link -->
+    <a href="#" accesskey="h">Link with Accesskey : </a>
+
+    <!-- Example of using accesskey with the input field-->
+    <label for="inputfield">
+        Input Field with Accesskey :
+    </label>
+    <input type="text" name="input" id="inputField" accesskey="i">
+
+    <!--Example of using accesskey with div-->
+    <div accesskey="d">
+        Div with accesskey
+    </div>
 </body>
 </html>
