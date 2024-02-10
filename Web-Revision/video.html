@@ -28,5 +28,23 @@
             HTML5 video element not supported !
         </strong>
     </video>
+
+    <!--
+        Now we will add some flash video player
+    -->
+    <h2>
+        Flash
+    </h2>
+    <video width="640" height="360" controls poster="loading.png">
+        <source src="http://htmlref.com/ch2/html_5.mp4" type="video/mp4">
+        <source src="http://htmlref.com/ch2/html_5.ogv" type="video/ogv">
+
+        <object data="html_5.swf" type="application/x-shockwave-flash" width="640" height="360" id="player">
+            <param name="movie" value="html_5.swf">
+            <strong>
+                Error : No video support at all
+            </strong>
+        </object>
+    </video>
 </body>
 </html>

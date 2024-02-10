@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        This file contains the code for audio sectiopn of html 
+    -->
+    <h1>
+        Audio file 
+    </h1>
+    <audio  src="http://htmlref.com/ch2/music.wav" controls>
+        Format not supported
+    </audio>
+    <!--
+        Now we will try another way to place audio in the file 
+        In this code we will use the autobuffer autoplay
+        Only one file that is supported will be shown here 
+    -->
+    <audio autoplay autobuffer controls>
+        <source src="http://htmlref.com/ch2/music.wav" type="audio/wav">
+        Format not supported !
+        <br>
+        <source src="http://htmlref.com/ch2/music.ogg" type="audio/ogg">
+    </audio>
+
+    <!--
+        Now we will add all the audios defining with their different formats
+    -->
+    <h2>
+        Wav Format
+    </h2>
+    <audio src="http://htmlref.com/ch2/music.wav" controls>
+        Audio not supported !
+    </audio>
+    <br>
+    <h2>
+        Ogg Format
+    </h2>
+    <audio src="http://htmlref.com/ch2/music.ogg" controls>
+        Ogg Format not supported !
+    </audio>
+
+    <!--
+        Now we will add multiple formats of one sound and fallbacks
+    -->
+    <h2>
+        Multiple formats and fall back
+    </h2>
+    <audio controls autoplay autobuffer>
+        <source src="http://htmlref.com/ch2/music.ogg" type="audio/ogg">
+        <source src="http://htmlref.com/ch2/music.wav" type="audio/wav">
+
+        <!--[if IE]>
+            <bgsound src="http://htmlref.com/ch2/music.wav">
+        <![endif]-->
+    </audio>
+</body>
+</html>
