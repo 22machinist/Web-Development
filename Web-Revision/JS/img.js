@@ -17,5 +17,17 @@ window.onload = function() {
         context.rect(50 , 340 , 300 , 50) ;
         context.fill() ;
         context.stroke() ;
+
+        //Now we will add Text using Canvas
+        context.lineWidth = 2 ;
+        context.font = '40px sans-serif' ;
+        context.strokeStyle = "black" ;
+        context.fillStyle = "white" ;
+        context.fillText("Canvas is great !" , 60 , 375 ) ;
+        context.shadowOffsetX = 10 ;
+        context.shadowOffsetY = 5 ;
+        context.shadowColor = "rgba(0 , 48 , 48 , 0.5)" ;
+        context.shadowBlur = 5;
+        context.strokeText("Canvas is great !" , 60 , 375) ;
     }
 }
