@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        This file contains some important elements !!
+    </h1>
+    <ul id="oldstyle">
+        <li>
+            Item 1
+        </li>
+        <li>
+            Item 2
+        </li>
+        <li>
+            Item 3
+        </li>
+        <li>
+            Item 4 
+        </li>
+    </ul>
+    <!-- Now we will add Menu element with different type -->
+    <ul id="fileMenu">
+        <li>
+            <a href="#" onclick="newItem();">
+                New
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="openItem();">
+                Open 
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="closeItem();">
+                Close 
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="saveItem();">
+                Save 
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="saveAsItem();">
+                Save As
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="exitApp();">
+                Exit
+            </a>
+        </li>
+    </ul>
+    <!-- Let us add menu with one more type -->
+    <ul id="simpleMenu">
+        <li>
+            <a href="#" onclick="add();">
+                Add 
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="edit();">
+                Edit
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="remove();">
+                Delete
+            </a>
+        </li>
+    </ul>
+
+    <!-- Let us try global "Contextmenu" attribute -->
+    <div contextmenu="simpleMenu">
+        Widget
+    </div>
+
+    <!-- Now let us use "command Element" -->
+    <menu type="context" label="Main Menu">
+        <li>
+            <command type="command" label="Add" icon="add.png">Add</command>
+        </li>
+        <li>
+            <command type="command" label="Edit" icon="edit.png"></command>
+        </li>
+        <li>
+            <command type="command" label="Delete" icon="delete.png"></command>
+        </li>
+        <hr>
+        <li>
+            <menu type="command" label="Skin" id="skinMenu">
+                <command type="radio" radiogroup="skin" label="Classic"></command>
+                <command type="radio" radiogroup="skin" label="Modern" checked></command>
+                <command type="radio" radiogroup="skin" label="Neo"></command>
+            </menu>
+        </li>
+        <hr>
+        <li>
+            <command type="checkbox" label="Secure Mode"></command>
+        </li>
+    </menu>
+</body>
+</html>
