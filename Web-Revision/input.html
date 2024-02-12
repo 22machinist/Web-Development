@@ -94,7 +94,7 @@
     <p>
         <label for="search">
             Search : 
-            <input type="search" name="search" id="search">
+            <input type="search" name="query" id="searchBox" autofocus>
         </label>
     </p>
     <br>
@@ -118,6 +118,35 @@
         <label for="email2" class="required">
             Email (With defined pattern) : 
             <input type="text" name="email2" id="email2" required pattern="^\w+ ([\.-]?\w+)*@\w+([\.-]?\w+)*\.(\w{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum)) $" title="Email format required">
+        </label>
+    </p>
+    <h2>
+        Now we will add list
+    </h2>
+    <p>
+        <label for="dogs">
+            Favorite Dog : 
+            <input type="text" list="dog" name="dogs" id="dogs">
+            <datalist id="dog">
+                <option value="German Shephard">
+                    German Shephard
+                </option>
+                <option value="Angus">
+                    Angus
+                </option>
+                <option value="Tucker">
+                    Tucker
+                </option>
+                <option value="Cujo">
+                    Cujo
+                </option>
+                <option value="Cisco">
+                    Cisco
+                </option>
+                <option value="Sabrina">
+                    Sabrina
+                </option>
+            </datalist>
         </label>
     </p>
 </body>
