@@ -104,5 +104,40 @@
             <command type="checkbox" label="Secure Mode"></command>
         </li>
     </menu>
+
+    <!--
+        Now let us use meter element
+    -->
+    <p>
+        Wrap Drive Output : 
+        <meter min="0" max="10" low="3" optimum="7" high="9" value="9.5" title="Captain she can't take much more of this!"></meter>
+    </p>
+    <!--
+        Now let us add detail element
+    -->
+    <details onclick="this.open='open'">
+        <dt>
+            Help ?
+        </dt>
+        <dd>
+            This could give you help with HTML5 but we need more implementations
+            to prove how things will work .
+        </dd>
+    </details>
+
+    <!--
+        Now we will add output element 
+    -->
+    <form action="#" method="get" id="testform">
+        <p>
+            <input type="date" id="year">
+            <br>
+            HTML5 released in the year 
+            <br>
+            <output for="year">
+                &nbsp;
+            </output>
+        </p>
+    </form>
 </body>
 </html>
