@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        article , aside , figure , footer , header , hgroup , menu , nav , section {
+            display: block;
+        }
+        body > header {
+            background-color: #930; 
+            color: white;
+        }
+        body > footer {
+            border-top: solid 5px black;
+        }
+        h2 {
+            margin-top: 0;
+            font-style: italic;
+        }
+        h3 {
+            font-variant: small-caps;
+        }
+        p {
+            margin: 1.5em;
+        }
+        section {
+            border-top: dashed 2px black;
+            padding-top: 1em ; 
+        }
+        section > section h3 {
+            margin-left: 2em;
+        }
+        section > section p {
+            margin-left: 3em;
+        }
+        body > footer > p {
+            text-align: right;
+            font-style: italic;
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Welcome to the Future World of HTML5 
+        </h1>
+        <h2>
+            Don't need to be scared it isn't that hard .
+        </h2>
+    </header>
+    <section id="chapter2">
+        <header>
+            <h1>
+                Chapter 2
+            </h1>
+        </header>
+        <p>
+            Intro to chapter 2 here ...
+        </p>
+        <section id="newStrucureElements">
+            <header>
+                <h2>
+                    Structural Elements 
+                </h2>
+            </header>
+            <h3>
+                Header Element 
+            </h3>
+            <p>
+                Discussion about Header element .
+            </p>
+            <h3>
+                Footer Element 
+            </h3>
+            <p>
+                Discussion to Footer Element
+            </p>
+            <h3>
+                Section Element 
+            </h3>
+            <p>
+                Discussion to Section Element 
+            </p>
+        </section>
+        <section id="newFormElements">
+            <header>
+                <h2>
+                    New Form Element
+                </h2>
+            </header>
+            <h3>
+                Input type = data 
+            </h3>
+            <p>
+                Discussion here .... 
+            </p>
+            <footer>
+                <p>
+                    These ideas are from WebForms specifications .
+                </p>
+            </footer>
+        </section>
+    </section>
+    <section id="chapter3">
+        <header>
+            <h2>
+                Chapter 3 
+            </h2>
+        </header>
+        <p>
+            Massive Element reference 
+        </p>
+    </section>
+    <footer>
+        Content of this example is not under &copy;
+    </footer>
+    <!--[if IE]>
+            <script type="text/javascript">
+        var html5element = "abbr,article,aside,audio,canvas,datalist,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',') ;
+        for (var i = 0 ; i < html5element.length ; i++) {
+            document.createElement(html5element[i]) ;
+        }
+    </script>
+    <![endif]-->
+</body>
+</html>

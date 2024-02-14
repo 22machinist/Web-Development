@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: red;
+            text-align: center;
+        }
+        h2 {
+            border-style: solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        This fill contains various types of data which can be assigned by the programmer and can letter be read by 
+        DOM getattribute() . 
+    </h1>
+    <h2>
+        <header>
+            Notice :
+        </header>
+        <p>
+            ID must be defined uniquely to every data-x
+        </p>
+    </h2>
+    <p id="P1">
+        <p id="p1" data-author="Ashutosh Sharma">
+            Ashutosh Sharma (data-X example)
+        </p>
+        <p id="p2" data-level="Beginner">
+            Beginner
+        </p>
+    </p>
+    <!--
+        Above Paragraph is defined as data-author
+    -->
+    <!--
+        Now we will create a form to show you how we can call the data defined by the author
+    -->
+    <form action="#">
+        <input type="button" value="Show Author" onclick="alert(document.getElementById('p1').getAttribute('data-author')) ;">
+    </form>
+    <!--
+        In the above code we used DOM getattribute() to call the data
+    -->
+    <!--
+        Now we will use DOM objects to call the data defined above 
+    -->
+    <br>
+
+    <form action="#">
+        <input type="button" value="Programmer" onclick="alert(document.getElementById('p2').dataset.level) ; ">
+    </form>
+</body>
+</html>

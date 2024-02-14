@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Video File !
+    </h1>
+    <!--
+        This file contains all the variations to carry the tag which have all video elemnets 
+    -->
+    <video src="#" controls>
+        HTML5  video tag does not supported
+    </video>
+    <br>
+    <br>
+    <br>
+    <video width="640" height="360" controls poster="#">
+        <!--
+            We will add the source links
+        -->
+        <source src="#" type="video/mp4">
+        <source src="#" type="video/ogg">
+        <strong>
+            HTML5 video element not supported !
+        </strong>
+    </video>
+
+    <!--
+        Now we will add some flash video player
+    -->
+    <h2>
+        Flash
+    </h2>
+    <video width="640" height="360" controls poster="loading.png">
+        <source src="http://htmlref.com/ch2/html_5.mp4" type="video/mp4">
+        <source src="http://htmlref.com/ch2/html_5.ogv" type="video/ogv">
+
+        <object data="html_5.swf" type="application/x-shockwave-flash" width="640" height="360" id="player">
+            <param name="movie" value="html_5.swf">
+            <strong>
+                Error : No video support at all
+            </strong>
+        </object>
+    </video>
+</body>
+</html>

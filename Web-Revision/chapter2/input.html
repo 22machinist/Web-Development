@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Form file 
+    </h1>
+    <p>
+        This file contains various types of input field 
+    </p>
+    <p>
+        <label for="color">
+            Color :
+            <input type="color" name="color">
+        </label>
+    </p>
+    <p>
+        <label for="date">
+            Date :
+            <input type="date" name="date">
+        </label>
+    </p>
+    <p>
+        <label for="datetime">
+            Date-Time : 
+            <input type="datetime" name="datetime">
+        </label>
+    </p>
+    <p>
+        <label for="datetime-local">
+            Local Date-time:
+            <input type="datetime-local" name="datetime-local">
+        </label>
+    </p>
+    <p>
+        <label for="time">
+            Time :
+            <input type="time" name="time" id="time">
+        </label>
+    </p>
+    <p>
+        <label for="month">
+            Month :
+            <input type="month" name="month" id="month">
+        </label>
+    </p>
+    <p>
+        <label for="week">
+            Week :
+            <input type="week" name="week" id="week">
+        </label>
+    </p>
+    <p>
+        <label for="number">
+            Number :
+            <input type="number" name="number" id="number">
+        </label>
+    </p>
+    <p>
+        <label for="number2">
+            Number (With range from -5 to 25) :
+            <input type="number" name="number2" id="number2" min="-5" max="25" step="5"> 
+            <!--Step will define how the numbers increase-->
+        </label>
+    </p>
+    <p>
+        <label for="range">
+            Range :
+            <input type="range" name="range" id="range" min="1" max="100" step="5">
+        </label>
+    </p>
+    <p>
+        <label for="tele">
+            Telephone No. : 
+            <input type="tel" name="tele" id="tele">
+        </label>
+    </p>
+    <p>
+        <label for="email">
+            Email : 
+            <input type="email" name="email" id="email">
+        </label>
+    </p>
+    <p>
+        <label for="url">
+            URL :
+            <input type="url" name="url" id="url">
+        </label>
+    </p>
+    <p>
+        <label for="search">
+            Search : 
+            <input type="search" name="query" id="searchBox" autofocus>
+        </label>
+    </p>
+    <br>
+    <h2>
+        Validation is included below 
+    </h2>
+    <p>
+        <label for="firstname">
+            First Name : 
+            <input type="text" name="firstname" id="firstname" required>  <!--This field is required -->
+        </label>
+    </p>
+    <!--We can use pattern method to get various type of data using only -->
+    <p>
+        <label for="phone" class="required">
+            Phone Number : 
+            <input type="text" name="phone" id="phone" required pattern="^\(\d{3}\) \d{3}-\d{4}$" title="Phone Number of form (xxx) xxx-xxxx">
+        </label>
+    </p>
+    <p>
+        <label for="email2" class="required">
+            Email (With defined pattern) : 
+            <input type="text" name="email2" id="email2" required pattern="^\w+ ([\.-]?\w+)*@\w+([\.-]?\w+)*\.(\w{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum)) $" title="Email format required">
+        </label>
+    </p>
+    <h2>
+        Now we will add list
+    </h2>
+    <p>
+        <label for="dogs">
+            Favorite Dog : 
+            <input type="text" list="dog" name="dogs" id="dogs">
+            <datalist id="dog">
+                <option value="German Shephard">
+                    German Shephard
+                </option>
+                <option value="Angus">
+                    Angus
+                </option>
+                <option value="Tucker">
+                    Tucker
+                </option>
+                <option value="Cujo">
+                    Cujo
+                </option>
+                <option value="Cisco">
+                    Cisco
+                </option>
+                <option value="Sabrina">
+                    Sabrina
+                </option>
+            </datalist>
+        </label>
+    </p>
+</body>
+</html>

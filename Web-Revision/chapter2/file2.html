@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            /* We will add the image specifications to make it look beautiful */
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border-top-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        This file is created to carry multiple sections 
+    -->
+    <header>
+        <h1>
+            Welcome to the future of world HTML5 
+        </h1>
+        <h2>
+            Don't be scared HTML is easy
+        </h2>
+    </header>
+    <section>
+        <header>
+            <h1>
+                First Section : 
+            </h1>
+        </header>
+        <h2>
+            Outside the header 
+        </h2>
+        <p>
+            Some section ! 
+        </p>
+        <footer>
+            <p>
+                I am the footer of section 1 
+            </p>
+        </footer>
+    </section>
+    <section id="chapter2">
+        <!--Creating the second section-->
+        <header>
+            <h1>
+                Chapter 2 
+            </h1>
+        </header>
+        <p>
+            <mark style="color: red;"> Intro to the Chapter 2 :  </mark>
+        </p>
+    </section>
+    <!--
+        Now we will add code to show date and time 
+    -->
+
+    <p id="date">
+        today it is : 
+        <time>
+            2024-02-08
+        </time>
+        <!--This above tag will show date -->
+        Time is : 
+        <time>
+            12 : 28 pm 
+        </time>
+    </p>
+    <!--
+        Now let us add image using "Legend tag"
+    -->
+    <figure>
+        <legend>
+            <img src="marines.jpg" alt="marine logo">
+        </legend>
+    </figure>
+    <!--
+        Now we will create two navigation bar with different specifications and importance 
+    -->
+    <nav id="1">
+        <ol>
+            <li>
+                <a href="#">Google</a>
+            </li>
+            <li>
+                <a href="#">Youtube</a>
+            </li>
+            <li>
+                <a href="#">Instagram</a>
+            </li>
+            <li>
+                <a href="#">Whatsapp</a>
+            </li>
+        </ol>
+    </nav>
+    <!--
+        Now we will create the other navbar with main menu id
+    -->
+    <nav id="mainmenu">
+        <ol>
+            <li>
+                <a href="#">Contact US</a>
+            </li>
+            <li>
+                <a href="#">Main Page</a>
+            </li>
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">Thanks giving</a>
+            </li>
+        </ol>
+    </nav>
+    <!--
+        Now we will add the video tag and try to encode video in the html file 
+    -->
+    <!--
+        We will include the file that is actually not installed on the machine
+    -->
+    <video src="https://youtu.be/bCQG5V2qH9w" width="640" height="360" controls>
+        <strong>
+            HTML5 video element not supported
+        </strong>
+    </video>
+
+    <!--
+        We can also include video in different 
+    -->
+    <video width="640" height="360" controls poster="loading.png">
+        <source src="video1.mp4" type="video/mp4">
+        <source src="video2.mp4" type="video/ogg">
+        <strong>
+            HTML5 video element not supported 
+        </strong>
+    </video>
+</body>
+</html> 

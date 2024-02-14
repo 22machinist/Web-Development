@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Element</title>
+</head>
+<body>
+    <h1>
+        Menu Element
+    </h1>
+    <nav>
+        <menu type="toolbar">
+            <ol>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ol>
+        </menu>
+    </nav>
+    <section>
+        <h2>
+            Context Menu
+        </h2>
+        <p>
+            Right-Click anywhere on the page to see the context menu .
+        </p>
+    </section>
+    <!--Creating the Context Menu-->
+    <menu id="context-menu" type="context">
+        <ol>
+            <li>
+                <a href="#">Copy</a>
+            </li>
+            <li>
+                <a href="#">Paste</a>
+            </li>
+            <li>
+                <a href="#">Cut</a>
+            </li>
+        </ol>
+    </menu>
+
+    <!--Adding the script-->
+    <script>
+        //Adding the event listener to show context menu or Right-Click
+        document.addEventListener("contextmenu", function(event){
+            event.preventDefault() ; //Prevent default context menu
+            var contextMenu = document.getElementById("context-menu");
+            contextMenu.style.top = event.clientY + "px" ; 
+            contextMenu.style.left = event.clientX + "px" ;
+            contextMenu.classList.add("show") ;
+        }) ;
+
+        //Hiding the context menu when clicking outside 
+        document.addEventListener("click" , function(event){
+            var contextMenu = document.getElementById("context-menu");
+            contextMenu.classList.remove("show");
+        }) ;
+    </script>
+    <!--
+        Let us add date and time 
+    -->
+    <h2>
+        Current date and time is :
+    </h2>
+    <!--
+        Placeholder to display the date and time using javascript
+    -->
+    <p id="currentDateTime">
+
+    </p>
+    <script>
+        //Creating function to get the current date and time
+        function getCurrentDateTime() {
+            var now = new Date() ; //Creates a new Date object representing the current date and time
+            var dateTimeString = now.toLocaleString() ;  //Converting the date object to a string representing the date and time in the user's local time zone 
+            return dateTimeString ;
+        } ;
+
+        // Update the content of the paragraph element with id "currentDateTime" to display the current date and time
+        document.getElementById("currentDateTime").textContent = getCurrentDateTime() ;
+    </script>
+
+    <!--
+        Let us try to use the access key attribute in the html
+    -->
+    <h2>
+        Access Key Example 
+    </h2>
+    <!-- Example of using accesskey with a button-->
+    <button accesskey="b"> Button with access key: </button>
+
+    <!-- Example of using accesskey with the anchor link -->
+    <a href="#" accesskey="h">Link with Accesskey : </a>
+
+    <!-- Example of using accesskey with the input field-->
+    <label for="inputfield">
+        Input Field with Accesskey :
+    </label>
+    <input type="text" name="input" id="inputField" accesskey="i">
+
+    <!--Example of using accesskey with div-->
+    <div accesskey="d">
+        Div with accesskey
+    </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html lang="eng">
+<head>
+    <!--
+        We will add some content to the meta tag and we will define why we did so
+    -->
+    <meta http-equiv="Content-Type" 
+    content="text/html" ;
+    charset="utf-8">
+    <script>
+        alert("Ram Ram from  Ashutosh !");
+    </script>
+    <title>
+        Revision file
+    </title>
+    <link rel="stylesheet" href="css-rev.css" media="screen" type="text/css">
+    <!--In this we will add some form css-->
+    <style>
+        input[name="number"]{
+            color: red;
+        } ;
+        input[name="email"]{
+            color: #999;
+        } ;
+    </style>
+    <!--
+        The above added color will appear in the email input section
+    -->
+</head>
+<body>
+    <h1>
+        This file contains all the basic codes for HTML Scripting
+    </h1>
+    <p>
+        This file is created with the motive to revise all the codes that
+        i studied and forgot due to break.
+    </p>
+    <article id="1">
+        <h2>
+            This section will contain codes for creating a color  section
+        </h2>
+        <input type="color" name="Yellow" value="#73ff33">
+    </article>
+    <article id="2">
+        <h2>
+            In this section we will expolre different types of list style types
+        </h2>
+        <ol style="list-style-type: upper-roman;">
+            This list will contain different type of scripts
+            <li>
+                Elon Musk
+            </li>
+            <li>
+                Jeff Bezos
+            </li>
+            <li>
+                Larry page
+            </li>
+        </ol>
+        <ol style="list-style-type: upper-alpha;">
+            <li>
+                India
+            </li>
+            <li>
+                Russia
+            </li>
+            <li>
+                America
+            </li>
+        </ol>
+        <ul style="list-style-type: disc;">
+            In this section we will explore various unordered list options
+            <li>
+                Brazil
+            </li>
+            <li>
+                Mexico
+            </li>
+            <li>
+                Colombia
+            </li>
+            <li>
+                Venenzuela
+            </li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>
+                France
+            </li>
+            <li>
+                Germany
+            </li>
+            <li>
+                UK
+            </li>
+            <li>
+                Poland
+                &hearts;
+            </li>
+        </ul>
+        <ul style="list-style:circle inside URL(https://www.google.com/imgres?imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F601%2F285%2Fpng-clipart-red-and-white-check-bullet-google-docs-bullet-points-angle-text.png&tbnid=na-TtEaiAO5JVM&vet=12ahUKEwiG1PaqvImEAxWmrGMGHXQ3AuYQMygEegQIARB-..i&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dbullet%2Bpoints&docid=Fbjfm9PNItU6OM&w=900&h=800&q=bullet%20%20point%20images&ved=2ahUKEwiG1PaqvImEAxWmrGMGHXQ3AuYQMygEegQIARB-);">
+            Now we will add some images as bullet points
+            <li>
+                Ak-203
+            </li>
+            <li>
+                M416
+            </li>
+        </ul>
+    </article>
+    <article id="3">
+        <h2>
+            In this section we will learn to use anchor codes
+        </h2>
+        <a href="www.google.com">Google</a> <br>
+        <a href="www.youtube.com">Youtube</a> <br>
+        <a href="#2">List</a><br>
+        <a href="#3">Links</a>
+    </article>
+    <!--Now we will add some forms and it's properties-->
+    <div id="4">
+        <!--
+            This section will contain the form 
+        -->
+        <form action="get">
+            <label for="email">
+                Email :
+            </label>
+            <input type="email" name="email" value="person@ex.com" size="40">
+        </form>
+        <!--Now we will add the script section-->
+        <script src="jquery.js">
+            //To activate this section we have to copy the "jquery.js " from the internet
+        </script>
+        <script>
+            //In this section we will define our own script in this section we will add and 
+            //Define some functions 
+            $(function(){
+                //This section is based on the value of the attribute 
+                $("input[name='email']").focus(function(){
+                    //The above code line defined the location where the function has to take action 
+                    if($(this).val() == "person@ex.com"){
+                        $(this).val("");
+                        $(this).css("color" , "black");
+                    }
+                    //The code that we defined contains the basic code that we had executed to perform a certain function 
+                });
+            }) 
+        </script>
+    </div>
+    <!--
+        Now we wiil add another form with another type of script 
+        This script is defined for number inout box
+    -->
+    <div id="5">
+        <!--
+            This section contains the code for the number input section
+        -->
+        <form action="post">
+            <label for="number">
+                Number :
+            </label>
+            <input type="number" name="number" id="number" maxlength="10">
+        </form>
+        <!--
+            Now we will add the script for the number input field 
+        -->
+        <script src="jquery.js">
+            //This script contains the query code 
+            //Add the code later 
+        </script>
+        <script>
+            //This section will functipon based on the attribute "number"
+            //All the code established in this section will work  only for defined section
+            
+            //Let's begin
+            $(function(){
+                $("input[name='number']").focus(function(){
+                    if($(this).val() == "9412483764"){
+                        $(this).val("") ;
+                        $(this).css("color" , "red");
+                    };
+                });
+            });
+        </script>
+    </div>
+    <em>
+        This file is important because it contains alot of information.
+    </em> <br>
+    <strong>
+        This file is important
+    </strong>
+    <!--
+        This tag below defines the paragraph tag
+    -->
+    <p>
+        This is a paragraph tag.
+    </p>
+    <br /> <!-- This tag is same as the "<br>-</br>"-->
+    <hr noshade>
+
+    <!--
+        Now we will add the image tag with some specifications
+    -->
+    <img src="IMG/images.jpeg" alt="Runners" height="100" width="100"> 
+    <br>
+
+    <a href="frameset.html">New file ! </a> <br>
+    <a href="object.html">Object that carries image</a><br>
+    <a href="file.html">File !</a> <!--This file is created on the basis of the code given in the book !-->
+    <br>
+    <a href="validator.html">Validation </a><br>
+    <a href="menu.html">Menu</a> <br> <!--This file will contain the detail example of menu element-->
+    <b>
+        <a href="file2.html">File 2 !</a>
+        &copy;
+        <br>
+        &dollar;
+    </b>
+    <br>
+    <!--
+        We will create a separate file to carry the "video" element tag
+    -->
+    <a href="video.html">
+        Video File !
+    </a>
+    <!--
+        We will create Audio file to test the audio code 
+    -->
+    <br>
+    <a href="audio.html">Audio file !</a>
+    <br>
+    <a href="canvas.html">Canvas File !</a>
+    <br>
+    <a href="canvas2.html"> Canvas 2 File !</a>
+    <br>
+    <a href="canvas3.html">Canvas 3 File ! </a>
+    <br>
+    <a href="canvasmain.html">Main Canvas File !</a>
+    <br>
+    <a href="Cube.html">Cube !</a>
+    <br>
+    <a href="smile.html">Smile !</a>
+    <br>
+    <a href="transform.html">Transform !</a>
+    <br>
+    <a href="img.html">Canvas Image !</a>
+    <br>
+    <a href="input.html">Form file !</a>
+    <br>
+    <a href="rep.html">Important Elements !</a>
+    <br>
+    <a href="iframe.html">Iframes !! </a>
+    <br>
+    <a href="metadata.html">Meta !</a>
+    <br>
+    <a href="micro.html">Microdata ! </a>
+    <br>
+    <a href="micro2.html">Microdata !!</a>
+    <br>
+    <a href="defer.html">Defer !</a>
+    <br>
+    <a href="com.html">Complete ! </a>
+</body>
