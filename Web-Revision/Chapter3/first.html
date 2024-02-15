@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        section {
+            border-style: solid;
+            padding: 2px;
+            background-color: red;
+        }
+        p {
+            border-style: dashed;
+            padding: 2px;
+            background-color: grey;
+        }
+        /*
+          Now we will define some CSS for context menu class
+        */
+        .context-menu {
+            display: none;/* This hides the display property*/
+            position: absolute;
+            background-color: aqua;
+            border: 1px solid red;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
-    <p title="Hello!">
+    <p title="Hello!" unselectables>
         This is the first paragraph ! 
     </p>
     <!--
@@ -14,6 +36,81 @@
     -->
     <button onclick="alert('Hi from Javascript') ;">
         Javascript
+    </button><br>
+
+    <!--
+        Now we will add the access key
+    -->
+    <br>
+    <form action="#">
+        <input type="button" value="Show Author" accesskey="t" onclick="alert('Button pressed') ;">
+    </form>
+    <br>
+    <button accesskey="a" onclick="alert('Ashutosh Sharma') ;">
+        Name 
     </button>
+    <!--
+        Now we will add some content that can be editable
+    -->
+    <p contenteditable="true">
+        Hi I am Ashutosh Sharma .
+        <!--
+            It has one value "inherit" = This describes tha tit's ability to edit the text depends on the 
+            it's parent element . Let me give you the answer below 
+        -->
+    </p>
+    <section contenteditable="true">
+        This section has contenteditable = true . It's child will 
+        <p contenteditable="inherit">
+            This have contenteditable = inherit . See the difference 
+        </p>
+    </section>
+    <!--
+        Now we will create a contextmenu
+    -->
+    <h2>
+        Warning : "contextmenu" tag requires some javascript and some css to perform well . 
+    </h2>
+    <div id="contextMenu" class="context-menu">
+        <ul>
+            <li onclick="menuitemclicked('Edit') ; "> <!--We defined the function that will work on clicking this-->
+                Edit
+            </li>
+            <li onclick="menuitemclicked('Delete') ;">
+                Delete 
+            </li>
+        </ul>
+    </div>
+
+    <div id="target" oncontextmenu="showcontextMenu(event)">
+        Right Click Me !
+    </div>
+    <!--
+        Now we will define the script for contextmenu
+    -->
+    <script type="text/javascript">
+        function showcontextMenu(event) {
+            event.preventDefault() ;
+            var contextMenu = document.getElementById("contextMenu") ; 
+            contextMenu.style.display = "block" ; 
+            contextMenu.style.left = event.pageX + "px" ; 
+            contextMenu.style.top = event.pageY + "px" ; 
+        }
+
+        function menuitemclicked(action){
+            alert("You clicked" + action) ; 
+            var contextMenu = document.getElementById("contextMenu") ;
+            contextMenu.style.display = "none" ;
+        }
+    </script>
+    <br>
+    <!--
+        One thing to remember to make button as anchor tag we have to put button inside the anchor tag
+    -->
+    <a href="context.html">
+        <button>
+            Context-Menu
+        </button>
+    </a>
 </body>
 </html>
