@@ -52,14 +52,14 @@
     <!--
         Now we will add some content that can be editable
     -->
-    <p contenteditable="true">
+    <p contenteditable="true" onblur="alert('Look at me !');">
         Hi I am Ashutosh Sharma .
         <!--
             It has one value "inherit" = This describes tha tit's ability to edit the text depends on the 
             it's parent element . Let me give you the answer below 
         -->
     </p>
-    <section contenteditable="true">
+    <section contenteditable="true" ondblclick="alert('How dare to touch me ?');">
         This section has contenteditable = true . It's child will 
         <p contenteditable="inherit">
             This have contenteditable = inherit . See the difference 
