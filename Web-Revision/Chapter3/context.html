@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .context-menu {
+            border-style: solid;
+            border-radius: 50%;
+            width: 100px;
+            position: absolute;
+            padding: 10px;
+            background-color: antiquewhite;
+            display: none;
+            
+        }
+        .one {
+            text-align: center;
+            font-size: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        In this file we tried varios examples of context-menu and basically to 
+        do practice .
+    </h1>
+    <!--First we create the menu that will appear after performing the function-->
+    <div id="contextMenu" class="context-menu">
+        <ul>
+            <!--Now we defined buttons to perform the function-->
+            <!--Now we will attach the function that will have been called after clicking the button-->
+            <li>
+                <button class="one" onclick="menuitemclicked('Edit') ;">
+                    Edit
+                </button>
+            </li>
+            <br>
+            <li>
+                <button class="one" onclick="menuitemclicked('Delete') ;">
+                    Delete
+                </button>
+            </li>
+            <br>
+            <li>
+                <button class="one" onclick="menuitemclicked('Save As') ;">
+                    Save as 
+                </button>
+            </li>
+            <br>
+        </ul>
+    </div>
+    <!--
+        Now we will define the actuall button which will appear to the user and the user will right-click
+        on it to peerform the described things 
+    -->
+    <div id="target" oncontextmenu="showcontextmenu(event)">
+        <button>
+            Right Click Me Dude !! 
+        </button>
+    </div>
+    <!--
+        Now we will create the most important part of the code it's script
+    -->
+    <script type="text/javascript">
+        function showcontextmenu(event) {
+            event.preventDefault() ; 
+            var contextMenu = document.getElementById("contextMenu") ; 
+            contextMenu.style.display = "block" ; 
+            contextMenu.style.left = event.pageX + "px" ;
+            contextMenu.style.top = event.pageY + "px" ;
+        }
+
+        function menuitemclicked(action) {
+            alert("You clicked " + action) ;
+            var contextMenu = document.getElementById("contextMenu") ; 
+            contextMenu.style.display = "none" ;
+        }
+    </script>
+    <p id="p1" data-author="Ashutosh">
+        This is Data-X Example .
+    </p>
+    <button onclick="alert(document.getElementById('p1').getAttribute('data-author')) ;">
+        Author
+    </button>
+
+    <!--
+        Now we will add the example of dragable and non-dragable text
+    -->
+    <p draggable="true">
+        Drag me 
+    </p>
+    <p draggable="false">
+        Grow some balls you can't drag me 
+    </p>
+    <!--
+        Now we will add html element with hidden attribute  
+    -->
+    <p hidden>
+        I m hidden . 
+    </p>
+    <!--
+        Now we will use the attribute "itemid"
+    -->
+    <div itemscope itemtype="http://ssa.gov/People" itemid="http://ssa.gov/SSN/123456789">
+        <span itemprop="firstname">Joe</span>
+        <span itemprop="lastname">Smith</span>
+    </div>
+    <div itemscope>
+        <time itemprop="gameday" datetime="2010-06-22">
+            June 22
+        </time>
+        The <span itemprop="visitor">Giants</span> at
+        <span itemprop="home">A's</span>. <br>
+        <meta itemprop="city" content="Oakland">
+    </div>
+    <!--
+        Let us add spell check
+    -->
+    <p spellcheck="true" contenteditable="true">
+        How do you spell potatoe ? 
+        A man named Dan may never know . 
+    </p>
+    <!--
+        Now let us add abbr 
+    -->
+    <p>
+        <abbr title="California">
+            Calif
+        </abbr> <br>
+        <!--
+            Now we will add acronym tag
+        -->
+        <acronym title="Extensible Markup Language">XML</acronym>
+        <br>
+        <acronym lang="fr" title="Soci&eacute;t&eacute;">
+            SNCF
+        </acronym>
+    </p>
+    <p>
+        <!--
+            Now let us add adress tag
+        -->
+        <address>
+            PINT , Inc. <br>
+            2105 Garnet Ave <br>
+            San Diego , CA 92109 <br>
+            U.S.A
+        </address>
+    </p>
+    <!--
+        Now let us use "applet" tag
+    -->
+    <applet>
+        <param name="difficulty" value="easy">
+        <strong>
+            Sorry , You need Java to play this game 
+        </strong>
+    </applet>
+</body>
+</html>
