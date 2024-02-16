@@ -156,11 +156,48 @@
     <!--
         Now let us use "applet" tag
     -->
-    <applet>
+    <applet coede="atarigame.class" align="left" archive="game.zip">
         <param name="difficulty" value="easy">
         <strong>
             Sorry , You need Java to play this game 
         </strong>
     </applet>
+
+    <!--
+        Now we will add the map
+    -->
+    <map name="primary" id="primary">
+        <area shape="circle" coords="200,250,25" href="another.html" alt="Circle">
+        <area shape="default" nohref>
+    </map>
+
+    <!--
+        Now we will add the article attribute
+    -->
+    <article id="article1">
+        <header>
+            <h1>
+                HTML5 is coming soon ! 
+            </h1>
+            <p>
+                <time pubdate datetime="2009-10-31T12:30-11:00"></time>
+            </p>
+        </header>
+        <p>
+            The new HTML5 specifications is in the works . While many features are not currently
+            implemented.
+        </p>
+    </article>
+    <p>
+        This is the main point I am trying to make it . 
+    </p>
+        <aside>
+            This is an aside I don't really know how important it is to make , 
+            but 
+            i love to make asides .
+        </aside>
+    <p>
+        OK now back to the point 
+    </p>
 </body>
 </html>
