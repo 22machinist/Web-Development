@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" height="400" width="400">
+        <strong>
+            Canvas supporting browser is required !! 
+        </strong>
+    </canvas>
+    <!--
+        Now we will addd the script for canvas 
+    -->
+    <script type="text/javascript" >
+        var canvas = document.getElementById("canvas") ;
+        var context = canvas.getContext("2d") ;
+
+        /*Drawing the simple figure of red and green squares */
+        context.fillStyle = "red" ;  //Simply put the name of color 
+        context.fillRect(0 , 0 , 100 , 100) ;
+        context.fillStyle = "rgb(0 , 255 , 0)" ; 
+        context.fillRect(25 ,25 , 50 , 50) ; 
+
+        //Now let me try to create more figures by understanding their positions 
+        context.fillStyle = "black" ;
+        context.fillRect(150,150,200,200) ;
+        context.fillStyle= "yellow" ;
+        context.fillRect(190,170,20,20);
+        context.fillRect(270 , 170 , 20 , 20);
+    </script>
+    <!--
+        Now let us use caption 
+    -->
+    <table>
+        <caption align="top">
+            Our high priced menu 
+        </caption>
+        <tr>
+            <td>
+                Escargot
+            </td>
+            <td>
+                Mercedes
+            </td>
+            <td>
+                Big Mac
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BMW
+            </td>
+            <td>
+                Ascort
+            </td>
+            <td>
+                Porsche
+            </td>
+        </tr>
+    </table>
+    <!--
+        Now let us add center tag
+    -->
+    <center>
+        This is the text provided in between of page 
+        The text finally worked
+    </center>
+    <br>
+    <h2>
+        Now we will add the code tag
+    </h2>
+    <p>
+        To increment a variable 
+        <var>count</var>
+        <code>count++</code>
+        or we can use different method too
+        <code>
+            count = count + 1 ;
+        </code>
+    </p>
+    <!--
+        Now we will use col tag in the table
+    -->
+    <table border="1" width="400">
+        <colgroup>
+            <col align="center" width="150">
+            <col align="right">
+            <col align="left">
+        </colgroup>
+        <tr>
+            <td>
+                This column is assigned in the center
+            </td>
+            <td>
+                This column is assigned in the right 
+            </td>
+            <td>
+                This column is assigned in the left 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                This is the second row's column assigned in center 
+            </td>
+            <td>
+                This is the right one 
+            </td>
+            <td>
+                This is the left one 
+            </td>
+        </tr>
+    </table>
+    <!--
+        Now we will use the command element
+    -->
+    <menu id="menu" hidden>
+        <ul>
+            <li>
+                Edit 
+            </li>
+            <li>
+                Delete 
+            </li>
+            <li>
+                Add 
+            </li>
+        </ul>
+    </menu>
+    <button onclick="">
+        Menu 
+    </button>
+</body>
+</html>
