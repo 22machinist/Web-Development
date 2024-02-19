@@ -90,5 +90,67 @@
             Footer
         </li>
     </dir>
+    <!--
+        Now we will add tehe embeded tag
+    -->
+    <embed src="images.jpeg" type="" height="150" width="150">
+    <noembed>
+        <img src="images.jpeg" alt="image">
+    </noembed>
+    <!--
+        Now let us use Fieldset
+    -->
+    <fieldset>
+        <legend>
+            Customer Identification : <!--Legend tag is used-->
+        </legend>
+        <br>
+        <label >
+            Customer Name: 
+            <input type="text" name="Name" id="Custname">
+        </label>
+        <br>
+        <!--
+            There can only be one Legend tag in the fieldset 
+        -->
+    </fieldset>
+    <fieldset>
+        <legend>
+            Contact info : 
+        </legend>
+        <label for="number">
+            Phone Number : 
+            <input type="number" id="number" name="number">
+        </label>
+    </fieldset>
+    <!--
+        Now we will add figure 
+    -->
+    <figure>
+        <dd>
+            <img src="images.jpeg" alt="image">
+            <figcaption>
+                Image of the runners .
+            </figcaption>
+        </dd>
+    </figure>
+    <!--
+        Now let us create the validating form 
+    -->
+    <form action="dosomething.php" method="post">
+        <div>
+            <label for="name">
+                Name  : 
+                <input type="text" id="name" name="name">
+            </label>
+            <label for="comments">
+                Comments : 
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </label>
+            <br>
+            <input type="submit" value="send">
+            <input type="reset" name="reset" id="reset" value="clear">
+        </div>
+    </form>
 </body>
 </html>
