@@ -10,17 +10,40 @@
         Form File ! 
     </h1>
     <form action="form.php" method="post">
-        <label for="name">
-            Name :
-        </label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">
-            Email : 
-        </label>
-        <input type="email" name="email" id="email" required>
-        <br>
-        <input type="submit" value="submit">
+        <fieldset>
+            <legend>
+                Basics
+            </legend>
+            <label for="name">
+                Name :
+                <input type="text" name="name" id="name" maxlength="35" size="20" required> <br>
+            </label>
+            <br>
+            <label for="pass">
+                Password : 
+                <input type="password" name="pass" id="pass" maxlength="25" size="20" required > <br>
+            </label>
+            <br>
+            <label for="food">
+                Favorite color : 
+                <input type="radio" name="food" id="food" value="Mexican"> Mexican <br>
+                <input type="radio" name="food" id="food" value="Indian"> Indian <br>
+                <input type="radio" name="food" id="food" value="American"> American <br>
+                <input type="radio" name="food" id="food" value="French"> French <br>
+                <input type="radio" name="food" id="food" value="Italian"> Italian <br>
+                <input type="radio" name="food" id="food" value="British"> British <br>
+            </label>
+            <br>
+            <label for="pat">
+                Three Letter Acronyms : 
+                <input type="text" name="pat" id="pat" pattern="[A-Z]{3}" title="Enter an uppercase three letter combination">
+            </label>
+            <br>
+            <label for="range">
+                Range : 
+                <input type="range" id="range" name="range">
+            </label>
+        </fieldset>
     </form>
 </body>
 </html>
