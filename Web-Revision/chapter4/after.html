@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .external::after {
+            content: url('offsite.gif');
+            margin-left: .2em;
+        }
+        .warning::before {
+            content: "Warning !";
+            background-color: yellow;
+            border-style: dashed;
+            border-width: 1px;
+            margin-right: 1em;
+        }
+        .warning::after {
+            content: "**";
+            background-color: yellow;
+            border-style: dashed;
+            border-width: 1px;
+            margin-left: 1em;
+        }
+
+        /*
+            now we will add the ::selection pseudo element code
+            Code below will provide different marker highlight color  
+        */
+        #select1::selection {
+            background-color: red;
+        }
+        #select1::-moz-selection {
+            background-color: red;
+        }
+        #select2::selection {
+            background-color: green;
+        }
+        #select2::-moz-selection {
+            background-color: purple;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        This file contains the usage of :before and :after pseudo Elements 
+    </h1>
+    <p>
+        <a href="#">Local Link</a> <br>
+        <a href="#" class="external">External Link</a>
+    </p>
+
+    <p class="warning">
+        This is dangerous example test . 
+        Be careful you may suffer boredom typing in a bunch of fake text
+        just to make this example work . 
+        Don't worry almost done finally ! 
+    </p>
+
+    <div>
+        Now i will add the example for code for "::selection pseudo element"
+
+        <p>
+            <span id="select1">
+                This is highlighted text 
+            </span>
+            Now select <span id="select2">
+                This is second highlighted text . 
+            </span>
+        </p>
+    </div>
+</body>
+</html>
