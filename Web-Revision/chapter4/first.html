@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="first.css">
@@ -10,8 +11,101 @@
     <h1>
         CSS Begins !! 
     </h1>
+    <h1>
+        Welcome to the world of CSS 
+    </h1>
     <p>
         This file is the begining of new series the CSS thing . 
     </p>
+    <p>
+        CSS <em class="fancy">really</em> isn't so hard either ! 
+    </p>
+    <p>
+        Soon you will also <span id="heart">&hearts;</span> using CSS . 
+    </p>
+    <p>
+        You can put lots off text if you want . 
+        We could go on and on with <span class="fancy">fake</span> text for you 
+        to read but let's get back to the body .
+    </p>
+
+    <!--
+        Now we will add the code to try multiple class selector rule in CSS 
+    -->
+    <h1 class="veryimportant heading stuff">
+        Heading (yellow backbround , red text , italic , and Impact)
+    </h1>
+    <p class="veryimportant">
+        This is the <strong>second</strong> paragraph . (red text , default background)
+    </p>
+    <p class="veryimportant stuff">
+        This is the third paragraph . (yellow background , red text , italic )
+    </p>
+    <p class="stuff veryimportant example dummy ">
+        This is the fourth paragraph . (yellow background , red text , italic , underlined)
+    </p>
+
+    <h2>
+        Now we will add the attribute selector in CSS ! 
+    </h2>
+    <div id="links">
+        <ol>
+            <li>
+                <a href="#google">
+                    Google 
+                </a>
+            </li>
+            <li>
+                <a href="#youtube">
+                    Youtube
+                </a>
+            </li>
+            <li>
+                <a href="#instagram">
+                    Instagram
+                </a>
+            </li>
+        </ol>
+    </div>
+    <div id="text">
+        <h2>
+            Now we will show how text can be selected 
+        </h2>
+        <p title="Larry Curly and Moe">
+            This is italic 
+        </p>
+        <p title="Larry">
+            This is italic 
+        </p>
+        <p title="Larry-The-Stooge">
+            This is not italic 
+        </p>
+    </div>
+    <div>
+        <h2>
+            We can also specify CSS for different language based . 
+        </h2>
+        <p>
+            Rule used : 
+            <code>
+                p[lang|="Language"] {"Properties"}
+            </code>
+        </p>
+        <p>
+            <h3>
+                Let us try the above code 
+            </h3>
+            Defining different Paragraphs in different languages 
+            <p lang="en">
+                This is in english language and it will be red 
+            </p>
+            <p lang="fr">
+                Ce paragraphe est en français
+            </p>
+            <p lang="ger">
+                Dieser Absatz ist auf Französisch
+            </p>
+        </p>
+    </div>
 </body>
 </html>

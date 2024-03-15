@@ -1,6 +1,69 @@
 body {
-    background-color: aqua;
+    background-color: antiquewhite;
+    color: black;
 }
 h1 {
     text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+#heart {
+    color: red;
+    font-size: xx-large;
+}
+.fancy {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+/*
+    @ import url (file_name) ;    // This attribute will import another stylesheet  
+*/
+.heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.veryimportant {
+    background-color: yellow;
+}
+.stuff {
+    color: red;
+}
+.veryimportant.stuff {
+    font-style: italic;
+}
+.veryimportant.example.stuff {
+    text-decoration: underline;
+}
+/*
+    The code given below is the contexual selection example 
+*/
+p strong {
+    color: purple;
+}
+/*
+    Now we will add the example of attribute selection
+*/
+
+a[href="#google"] {
+    background-color: blueviolet;
+}
+/*
+    The above code will only apply to a element with that particular href
+*/
+p[title~="Larry"] {
+    font-style: italic;
+}
+
+/*
+    Now we will add the CSS Selection based on the language defined
+*/
+p[lang|="en"] {
+    color: red;
+}
+p[lang|="fr"] {
+    color: aquamarine;
+}
+p[lang|="ger"] {
+    color: brown;
 }
