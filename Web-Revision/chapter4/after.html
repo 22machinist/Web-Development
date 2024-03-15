@@ -37,6 +37,30 @@
         #select2::-moz-selection {
             background-color: purple;
         }
+        /*
+            Some link related pseudo classes are as follows 
+        */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:active {
+            color: red;
+            background-color: #FFC;
+        }
+        a:visited {
+            color: purple;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        a:focus{
+            border-style: dashed;
+            border-width: 1px;
+            background-color: #FFA500;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,6 +70,9 @@
     <h1>
         This file contains the usage of :before and :after pseudo Elements 
     </h1>
+    <p>
+        Now we will add some link related psuedo-classes 
+    </p>
     <p>
         <a href="#">Local Link</a> <br>
         <a href="#" class="external">External Link</a>
