@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css" media="screen">
+    :root {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    } /* Same as setting HTML Element  */
+    ul li:nth-child(odd) {
+        color: red; /* odd items red  */
+    }
+    ul li:nth-child(even) {
+        color: blue; /* Even items blue  */
+    }
+    ul li:nth-child(5) {
+        font-size: xx-large; /*5th item is bigger */
+    }
+    ul li:nth-child(3n) {
+        font-style: italic; /* Every third time italic */
+    }
+    ul li:nth-last-child(2) {
+        text-decoration: underline; /* Second from the last child is underlined*/
+    }
+    ul li:last-child {
+        background-color: black;
+        color: white; /* same as nth last child */
+    }
+
+    p#test1 span:first-of-type {
+        color: green;
+    }
+    p#test1 span:last-of-type {
+        color: red;
+    }
+    p#test1 span:nth-of-type(3) {
+        font-size: larger;
+    }
+    p#test1 span:nth-last-of-type(2) {
+        text-decoration: underline;
+    }
+
+    p.test2 span:only-child{
+        color: green;
+    }
+    p.test3 em:only-of-type {
+        background-color: red;
+    }
+    p:empty {
+        border: 2px solid red ;
+    }
+</style>
+<body>
+    <p>
+        This file contains all the codes for different child trees 
+    </p>
+    <h1>
+        Begins from here ! 
+    </h1>
+    <ul>
+        <li>
+            Odd (Red)
+        </li>
+        <li>
+            Even (Blue)
+        </li>
+        <li>
+            Odd and by Three so italic 
+        </li>
+        <li>
+            Even 
+        </li>
+        <li>
+            Odd and bigger because it is 5th child 
+        </li>
+        <li>
+            Even and by Three so italic 
+        </li>
+        <li>
+            Odd 
+        </li>
+        <li>
+            Even 
+        </li>
+        <li>
+            Odd and 2nd to the last item should be underlined , also by Three
+            so italic . 
+        </li>
+        <li>
+            Last item in white on Black 
+        </li>
+    </ul>
+    <p id="test1">
+        This is <em>not a span </em> . 
+        I am the <span>First span so , i will be green .</span>
+        I am <span>Second span so nothing</span> . 
+        I am <span>Third span so i am big </span> . 
+        I am <span>Fourth span so nothing </span>. 
+        I am <span>Fifth span second to last so underlined </span> . 
+        I am <span>Last span so I am red </span> . 
+        This is <em>not a span </em>. 
+    </p>
+    <p class="test2">
+        I am <span>only child so I am green</span>.
+    </p>
+    <p class="test2">
+        I have <span>two</span> <b>children </b> so no green here . 
+    </p>
+    <p class="test3">
+        I have single <em> em , so I am red </em>
+    </p>
+    <p class="test3">
+        I have two <em>em</em> <em>tags</em> so neither is red . 
+    </p>
+    <p>
+        Empty element below . 
+    </p>
+    <p>
+
+    </p>
+    <p>
+        Empty element above . 
+    </p>
+</body>
+</html>
