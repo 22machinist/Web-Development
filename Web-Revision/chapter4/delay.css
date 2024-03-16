@@ -1,0 +1,96 @@
+@keyframes move {
+    from {
+        width: 100px;
+        height: 300px;
+        left: 0;
+        top: 0;
+    }
+    50% {
+        width: 100px;
+        height: 300px;
+        left: 300px;
+        top: 0px;
+    }
+    to {
+        width: 300px;
+        height: 300px;
+        left: 300px;
+        top: 300px;
+    }
+}
+
+@keyframes resize {
+    from {
+        width: 100px;
+        height: 300px;
+        left: 300px;
+        top: 300px;
+    } 
+    50% {
+        width: 100px;
+        height: 100px;
+        left: 300px;
+        top: 300px;
+    }
+    to {
+        width: 300px;
+        height: 100px;
+        left: 300px;
+        top: 300px;
+    }
+}
+
+@-webkit-keyframes move {
+    from {
+        width: 100px;
+        height: 300px;
+        left: 0;
+        top: 0;
+    }
+    50% {
+        width: 100px;
+        height: 300px;
+        left: 300px;
+        top: 0px;
+    }
+    to {
+        width: 300px;
+        height: 300px;
+        left: 300px;
+        top: 300px;
+    }
+}
+
+@-webkit-keyframes resize {
+    from {
+        width: 100px;
+        height: 300px;
+        left: 300px;
+        top: 300px;
+    } 
+    50% {
+        width: 100px;
+        height: 100px;
+        left: 300px;
+        top: 300px;
+    }
+    to {
+        width: 300px;
+        height: 100px;
+        left: 300px;
+        top: 300px;
+    }
+}
+
+/*
+    Now we will define element on which the above animation will work 
+*/
+
+#anim {
+    animation-name: move , resize ;
+    animation-duration: 4s , 4s;
+    animation-delay: 0s , 4s;
+    position: absolute;
+    background-color: purple;
+}
+
