@@ -1,0 +1,57 @@
+@keyframes move {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(100px) translateY(100px);
+    }
+    100% {
+        transform: translateX(200) translateY(200);
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(100px) translateY(100px);
+    }
+    100% {
+        transform: translateX(200px) translateY(200px);
+    }
+}
+
+@keyframes opposite {
+    0% {
+        transform: translateX(300px) translateY(300px );
+    }
+    50% {
+        transform: translateX(400px) translateY(400px);
+    }
+    100% {
+        transform: translateX(500px) translateY(500px);
+    }
+}
+@-webkit-keyframes opposite {
+    0% {
+        transform: translateX(300px) translateY(300px );
+    }
+    50% {
+        transform: translateX(400px) translateY(400px);
+    }
+    100% {
+        transform: translateX(500px) translateY(500px);
+    }
+}
+
+.box {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    animation: move 3s infinite alternate;
+}
+.box:hover {
+    animation: opposite 4s infinite alternate;
+}
