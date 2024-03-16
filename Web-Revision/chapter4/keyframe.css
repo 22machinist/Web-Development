@@ -1,0 +1,31 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+/* Applying the animation to an element */
+.box {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    animation: slide 3s infinite alternate;
+}
