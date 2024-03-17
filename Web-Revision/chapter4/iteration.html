@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @keyframes resize {
+            from {
+                height: 300px;
+                width: 100px;
+                left: 0px;
+                top: 0px;
+            }
+            50% {
+                height: 100px;
+                width: 100px; 
+                left: 300px;
+                top: 0;
+            }
+            to {
+                height: 100px;
+                width: 300px;
+                left: 300px;
+                top: 300px;
+            }
+        }
+        @keyframes move {
+            from {
+                left: 150px;
+                top: 150px;
+            }
+            50% {
+                left: 300px;
+                top: 0;
+            }
+            to {
+                left: 400px;
+                top: 200px;
+            }
+        }
+
+        #anim1 {
+            animation: resize 4s infinite;
+            position: absolute;
+            background-color: purple;
+        }
+        #anim2 {
+            animation: move 4s 2;
+            position: absolute ;
+            top: 150px;
+            left: 150px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="anim1">
+            watch me move and change size forever !! 
+    </div>
+    <div id="anim2">
+        watch me move two times
+    </div>
+</body>
+</html>
