@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animmation timing function</title>
+    <style type="text/css">
+        @keyframes move {
+            from {
+                left: 0;
+                top: 0;
+            }
+            50% {
+                left: 300px;
+                top: 0;
+            }
+            to {
+                left: 600px;
+                top: 0;
+            }
+        }
+
+        #anim {
+            animation: move 4s linear infinite ;
+            position: absolute;
+            background-color: purple;
+        }
+
+        #controls {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
 </head>
 <body>
     <div id="anim">
