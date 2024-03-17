@@ -1,0 +1,8 @@
+<PUBLIC:COMPONENT URN= "urn:msdn-microsoft-com:workshop" lightweight="true">
+    <PUBLIC:ATTACH EVENT = "onclick" FOR="element" ONEVENT="sayHi()" />
+    <SCRIPT LANGUAGE="JScript">
+        function sayHi() {
+            alert("Hello world from a bound HTC") ;
+        }
+    </SCRIPT>
+</PUBLIC:COMPONENT>
