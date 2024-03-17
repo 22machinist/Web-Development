@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animmation timing function</title>
+</head>
+<body>
+    <div id="anim">
+        <b>
+            Watch me move ! 
+        </b>
+    </div>
+
+    <form onchange="document.getElementById('anim').style.webkitAnimationTimingFunction=this.options[this.selectedIndex].value;" id="controls">
+        <select name="" id="">
+            <option value="cubic-bezier(110,120,210,280)">
+                Cubic Bezier
+            </option>
+            <option value="ease">
+                Ease
+            </option>
+            <option value="ease-in">
+                Ease in
+            </option>
+            <option value="ease-in-out">
+                Ease In Out
+            </option>
+            <option value="ease-out">
+                Ease Out
+            </option>
+            <option value="linear" selected>
+                linear
+            </option>
+        </select>
+    </form>
+</body>
+</html>
