@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Properties</title>
+    <style>
+        /* Defining column container */
+        .column-container {
+            display: flex;
+            flex-direction: wrap;
+            gap: 20px;
+        }
+
+        /* Defining individual columns */
+        .column {
+            flex: 1; /* Each column takes up equal space */
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Defining for media query */
+        @media(max-width: 768px) {
+            .column {
+                flex-basis: calc(50% - 20px); /* Two columns per row on smaller screens */
+            }
+        }
+
+        /* Adding hover effect */
+        .column:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+     </style>
+</head>
+<body>
+    <div class="column-container">
+        <div class="column">
+            <h2>
+                Column 1
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur, magnam voluptate, excepturi dolor labore voluptatibus laborum officia harum dolorum sed soluta, exercitationem tempore voluptates repudiandae id nobis nesciunt eos!
+            </p>
+        </div>
+        <div class="column">
+            <h2>
+                Column 2
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsum! Ab illo qui atque harum ut facere, minus, nostrum rerum distinctio assumenda reprehenderit omnis asperiores?
+            </p>
+        </div>
+        <div class="column">
+            <h2>
+                Column 3 
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, laborum ducimus accusantium molestiae consequatur amet nostrum doloribus quae, provident laudantium fugit culpa hic ea delectus iure consequuntur possimus minima? Id ullam pariatur corporis. Illum modi autem natus adipisci quam quas repudiandae, odit voluptatem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

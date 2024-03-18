@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-Break-After</title>
+    <style>
+        .column-container {
+            columns: 2; /* Divide content into two columns */
+            column-gap: 20px; /* Add some gap between columns */
+        }
+        .box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px; /* Add margin between boxes */
+        }
+        /* Force column break after the second block */
+        .box:nth-child(2) {
+            -webkit-column-break-after: always;
+        }
+    </style>
+</head>
+<body>
+    <div class="column-container">
+        <div class="box">
+            <h2>
+                Box 1
+            </h2>
+            <p>
+                This is the content of box 1 .
+            </p>
+        </div>
+        <div class="box">
+            <h2>
+                Box 2
+            </h2>
+            <p>
+                This is the content of Box 2 . It will force a 
+                column break after this box .
+            </p>
+        </div>
+        <div class="box">
+            <h2>
+                Box 3 
+            </h2>
+            <p>
+                This is the content of box 3 . 
+            </p>
+        </div>
+        <div class="box">
+            <h2>
+                Box 4
+            </h2>
+            <p>
+                This is the content of Box 4 . 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

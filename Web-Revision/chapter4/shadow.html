@@ -31,6 +31,36 @@
         #box6 {
             box-shadow: orange 10px 10px 20px , green -10px -10px 20px;
         }
+        #box7{
+            box-sizing: border-box;
+            height: 100px;
+            width: 200px;
+            background-color: orange;
+            border: 10px solid red;
+            padding: 10px;
+        }
+        #box8 {
+            box-sizing: content-box;
+            height: 100px;
+            width: 200px;
+            background-color: orange;
+            border: 10px solid red;
+            padding: 10px;
+        }
+        .breakitdown {
+            -webkit-column-break-after: always;
+        }
+        .nobreaks {
+            -webkit-column-break-after: avoid;
+        }
+        .two-column {
+            background-color: red;
+            column-count: 2;
+        }
+        .three-column {
+            background-color: black;
+            column-count: 3;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +81,33 @@
     </div>
     <div id="box6">
         Shadow Boxing 
+    </div>
+    <p>
+        Now we will add the boxes to understand 
+        "box-sizing" property . 
+    </p>
+    <div id="box7">
+        Border-box
+    </div>
+    <div id="box8">
+        content-box 
+    </div>
+    <div class="breakitdown">
+        Column break = Always 
+    </div>
+    <div class="nobreaks">
+        Column break after = avoid 
+    </div>
+    <div id="box9">
+        <div class="two-column">
+                <div></div>
+                <div></div>
+        </div>
+        <div class="three-column">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
     </div>
 </body>
 </html>
