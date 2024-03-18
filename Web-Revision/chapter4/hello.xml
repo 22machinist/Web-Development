@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bindings xmlns="http://www.mozilla.org/xbl" 
+ xmlns:html="http://www.w3.org/1999/xhtml">
+ <binding id="hello">
+   <handlers>
+       <handler event="click" action="alert('Hello world from the bound of XML')" />
+    </handlers>
+ </binding>
+</bindings>
