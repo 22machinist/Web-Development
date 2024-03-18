@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        div {
+            height: 300px;
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+        }
+        #linear {
+            background: -webkit-gradient(linear , left top , left bottom , from(#f00) , to(rgba(0,255,0,0)) , color-stop(.5 , #00f));
+        }
+        #radial {
+            background: -webkit-gradient(radial , 100 100 , 20 , 200 200 , 50 , from(#ff0) , to(rgba(255,0,255,0)) , color-stop(25% , #00f));
+        }
+    </style>
+</head>
+<body>
+    <div id="linear">
+
+    </div>
+    <div id="radial">
+
+    </div>
+</body>
+</html>
