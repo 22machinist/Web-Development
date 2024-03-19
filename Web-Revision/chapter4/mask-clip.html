@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask-clip</title>
+    <style>
+        div {
+            height: 50px;
+            width: 150px;
+            float: left;
+            margin: 20px;
+            padding: 20px;
+            background-color: red;
+            font: bold xx-large;
+            border: 15px solid black;
+            mask-image: url(images/download.jpeg);
+            mask-repeat: repeat;
+            mask-size: 20px 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="mask-clip: content;" >
+        content
+    </div>
+    <div style="mask-clip: border;">
+        border 
+    </div>
+    <div  style="mask-clip: border;">
+        padding 
+    </div>
+</body>
+</html>
