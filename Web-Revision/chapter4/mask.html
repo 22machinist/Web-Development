@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask file </title>
+    <style>
+        div {
+            height: 100px;
+            width: 200px;
+            border-style: solid;
+            padding: 5px;
+            margin: 5px;
+            position: relative;
+        }
+        #mask-on {
+            position: absolute;
+            background-color: red;
+        }
+        #mask-off {
+            position: absolute;
+            background-color: orange;
+        }
+
+        #mask-off:hover {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="mask-on">
+        Mask on 
+    </div>
+    <div id="mask-off">
+        Mask-off 
+    </div>
+</body>
+</html>
