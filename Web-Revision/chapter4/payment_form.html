@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form </title>
+    <style>
+        b {
+            color: red;
+        }
+        div {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Pheonix 
+    </h1>
+    <h2>
+        Contact Information : 
+    </h2>
+    <div id="contact_info">
+        <div id="full_name">
+            <p>
+                Name : <b>*</b> <input type="text" name="name" id="name" required> 
+            </p>
+        </div>
+        <div id="gender_define">
+            <p>
+                <legend> 
+                    Gender  : <b>*</b>
+                </legend>
+
+                Male <input type="radio" name="gender" id="male" required> 
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </div>
+        <div id="number">
+            <p>
+                Contact No. : <b>*</b><input type="number" name="contact_number" id="contact_number" required>
+            </p>
+        </div>
+        <div id="dob">
+            <p>
+                D-O-B : <b>*</b><input type="date" name="Dofb" id="Dofb" required>
+            </p>
+        </div>
+        <div id="adress">
+            <p>
+                Address : <textarea name="address" id="address" cols="80" rows="10"></textarea>
+            </p>
+        </div>
+        <div id="customer_email">
+            <p>
+                Email : <input type="email" name="eamil" id="email">
+            </p>
+        </div>
+        <div id="pin">
+            <p>
+                Pincode : <input type="number" name="pincode" id="pincode">
+            </p>
+        </div>
+    </div>
+    <h2>
+        Payment Info : 
+    </h2>
+    <div id="payment_info">
+        <div id="card_type">
+            <p>
+                Card-type :
+                <select name="Card-type" id="Card-type">
+                    <option value="">--Select Card Type--</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Master Card</option>
+                </select>
+            </p>
+        </div>
+        <div id="card_number">
+            <p>
+                Card Number : <input type="number" name="card-number" id="card-number">
+            </p>
+        </div>
+        <div id="CVV">
+            <p>
+                CVV : <input type="number" name="cvv" id="cvv">
+            </p>
+        </div>
+        <div id="exipiry">
+            <p>
+                Exipation Date : <input type="date" name="expiry-date" id="expiry-date">
+            </p>
+        </div>
+    </div>
+</body>
+</html>
