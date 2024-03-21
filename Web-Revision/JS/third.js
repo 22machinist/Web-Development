@@ -6,6 +6,16 @@ while ( number < 14) {
     number = number + 2 ; 
 }; 
 
+//Now let us add something different 
+let result = 1 ;
+let counter = 0 ; 
+
+while (counter < 10) {
+    result = result * 2 ; 
+    counter = counter + 1 ; 
+}; 
+ console.log(result) ; 
+
 
 const readline = require('readline') ; 
 
