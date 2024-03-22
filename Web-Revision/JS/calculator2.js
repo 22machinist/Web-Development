@@ -90,7 +90,7 @@ r1.question("Define operation :" , (a) => {
             }) ;
         }) ;  
     } else if (a === 'D' || a === 'd')  {
-        console.log("Addition Operation selected ! ") ;
+        console.log("Division Operation selected ! ") ;
 
         //Prompt for first number 
         r1.question("Number 1 : " , (num1) => {
@@ -117,7 +117,7 @@ r1.question("Define operation :" , (a) => {
             }) ;
         }) ;  
     } else {
-        console.log("Unkown Operstion selected !!") ; 
+        console.log("Unkown Operation selected !!") ; 
     } ; 
     r1.close() ;
 }) ;
