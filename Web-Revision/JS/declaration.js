@@ -78,4 +78,39 @@ function multiplier(factor) {
 let twice = multiplier(2) ; 
 console.log(twice(5)) ; 
 
+//Now let us add recursive functions
+//Those functions which call themselves are termed as recursive
+
+//Now let us take the examole of recursive function
+function pow(base , exponent) {
+    if (exponent == 0) {
+        return 1 ;
+    } else {
+        return base * pow(base , exponent - 1) ; 
+    }
+}
+
+//Now let us test the above function
+console.log(pow(2 , 3));
+
+//Now let us add one more recursive soloution 
+/*
+    The function defined blow finds a sequence to give you a pattern in which the way of 3 and 5 multiplied to give out the target is found
+ */
+
+function findSolution(target) {
+    function find(current , history) {
+        if (current == target) {
+            return history ;
+        } else if (current > target) {
+            return null ; 
+        } else {
+            return find(current + 5 , `(${history} + 5)`) || 
+            find ( current * 3 , `(${history} * 3)`) ;
+        }
+    }
+    return find(1 , "1") ;
+}
+
+console.log(findSolution(24)) ;
 
