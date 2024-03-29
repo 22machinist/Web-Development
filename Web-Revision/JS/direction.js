@@ -31,7 +31,7 @@ function promptDirection(question){
     if(result.toLowerCase() == "left"){
         return "L" ;
     }
-    if (result.toLowerCase() == "rigth") {
+    if (result.toLowerCase() == "right") {
         return "R" ; 
     }
     throw new Error("Invalid direction: " + result) ;
