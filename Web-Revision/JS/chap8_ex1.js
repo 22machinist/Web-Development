@@ -1,4 +1,4 @@
-//First we will define  all the stuff tha twe need 
+//First we will define  all the stuff that we  need 
 
 function generateTask() {
     let tasks = [] ;
