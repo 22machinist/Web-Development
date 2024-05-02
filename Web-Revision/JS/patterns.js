@@ -15,3 +15,40 @@ let weapons = /\b\d+ (tank|gun|artillery|fighter|warship)s?\b/;
 
 //Let's test the above code
 console.log(weapons.test("25 tanks"));
+//Now we will add some more codes regarding the above command
+console.log(weapons.test("35 artillery"));
+//The abive will give true
+console.log(weapons.test("45 fighters"));
+//The above will be true
+console.log(weapons.test("75 submarines"));
+//The above will be false
+
+//Now let us try more stuff to understand the above code 
+let forces = /\b\d+ (Russian|American|French|British) forces?\b/;
+
+//Now let us test the above code it was slightly different
+//Now let us try the above code with different results
+console.log(forces.test("7500 Russians"));
+console.log(forces.test("7510 Americans"));
+console.log(forces.test("3546 Frenchs"));
+console.log(forces.test("1200 British Forces"));
+console.log(forces.test("234 Russian forces"));
+//Let us try something new with the above code 
+//Let us try something different with the above code
+let cars = /\b\d+ (Mercedes|BMW|Macleran|Porsche)s?\b/;
+
+//Let's try the code 
+console.log(cars.test("123 Mercedess"));
+console.log(cars.test("1244 BMWs"));
+console.log(cars.test("12 Maclerans"));
+//Let's change the code
+console.log(cars.test("145 Porsches"));
+//Now we will try the different code 
+//Now we will try it with const variable
+const  vasr = /\b\d+ (American|Muscle)s?\b/;
+
+//Let us add other codes in it
+
+
+
+
