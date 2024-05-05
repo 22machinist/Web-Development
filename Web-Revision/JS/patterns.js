@@ -5,7 +5,7 @@ let animalCount = /\b\d+ (pig|cow|chicken)s?\b/;
 //The above code will check not only the numbers but followed by the words provided later 
 
 //Let's test the above code 
-console.log(animalCount.test("15 pigs"));
+console.log(animalCount.test("15 pigs")); 
 //This will return true 
 console.log(animalCount.test("25 elephants"));
 //This will return false 
@@ -48,6 +48,9 @@ console.log(cars.test("145 Porsches"));
 const  vasr = /\b\d+ (American|Muscle)s?\b/;
 
 //Let us add other codes in it
+
+//Let us right the code that no one had ever written on it 
+//Let us code indiscriminantely
 
 
 
