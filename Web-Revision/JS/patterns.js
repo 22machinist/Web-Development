@@ -51,6 +51,12 @@ const  vasr = /\b\d+ (American|Muscle)s?\b/;
 
 //Let us right the code that no one had ever written on it 
 //Let us code indiscriminantely
+//In this code we will manipulate the basic writting of everything
+//Let us code a little hard and tough in this process we will brew some hard facts 
+//In this file we will code a bit differently 
+//We will go for it indistcimently
+//Let us code with the indiscremenently inside the venue of  
+//Let us take the offensive aspect first let us be we what we are
 
 
 
