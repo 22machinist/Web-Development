@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain-Based Voting System</title>
+</head>
+<body>
+    <h1>Blockchain-Based Voting System</h1>
+    <div id="register">
+        <h2>Register Voter</h2>
+        <input type="text" id="voterAddress" placeholder="Voter Address">
+        <button onclick="registerVoter()">Register</button>
+    </div>
+    <div id="vote">
+        <h2>Cast Vote</h2>
+        <input type="text" id="candidate" placeholder="Candidate Name">
+        <button onclick="castVote()">Vote</button>
+    </div>
+    <div id="output"></div>
+    <script src="web3.min.js"></script>
+    <script src="contract.js"></script>
+</body>
+</html>

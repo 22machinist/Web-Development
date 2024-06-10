@@ -1,0 +1,33 @@
+pragma solidity ^0.8.0;
+
+contract Vote {
+    address public admin;
+    mapping(address => bool) public voters;
+    mapping(bytes32 => uint256) public votes;
+    
+    event VoteCast(address indexed voter, bytes32 indexed candidate);
+
+    constructor() {
+        admin = msg.sender;
+    }
+
+    modifier onlyAdmin() {
+        require(msg.sender == admin, "Only admin can perform this action");
+        _;
+    }
+
+    modifier onlyVoter() {
+        require(voters[msg.sender], "Only registered voters can cast votes");
+        _;
+    }
+
+    function registerVoter(address _voter) external onlyAdmin {
+        voters[_voter] = true;
+    }
+
+    function castVote(bytes32 _candidate) external onlyVoter {
+        require(votes[_candidate] < 2**256 - 1, "Candidate does not exist or has reached maximum votes");
+        votes[_candidate]++;
+        emit VoteCast(msg.sender, _candidate);
+    }
+}
