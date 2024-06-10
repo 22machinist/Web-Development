@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Recognition App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI Image Recognition App</h1>
+    <input type="file" id="fileInput">
+    <button onclick="uploadImage()">Upload Image</button>
+    <div id="imageContainer"></div>
+    <div id="output"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="script.js"></script>
+</body>
+</html>

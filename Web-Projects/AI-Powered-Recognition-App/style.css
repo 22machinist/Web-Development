@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#fileInput {
+    margin-bottom: 10px;
+}
+
+#imageContainer {
+    margin: 20px auto;
+}
+
+#output {
+    margin-top: 20px;
+}
